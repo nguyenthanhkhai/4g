@@ -81,3 +81,21 @@ ul li {
     background: darkblue;
     transform: scale(1.05);
 }
+
+/* Căn giữa và hiển thị các gói dịch vụ theo chiều dọc trên điện thoại */
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package {
+        width: 90%; /* Giảm chiều rộng để phù hợp với màn hình nhỏ */
+        margin-bottom: 20px; /* Khoảng cách giữa các gói */
+    }
+
+    .progress-bar {
+        width: 100%; /* Đảm bảo thanh tiến trình hiển thị đủ rộng */
+    }
+}
